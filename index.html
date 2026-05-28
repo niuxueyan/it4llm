@@ -154,14 +154,14 @@ The workshop will bring together researchers from IT and AI to foster cross-disc
                         <td>Opening Remark <span class="event-tag">Huawei Sponsored Lunch</span></td>
                         <td>Dr. Bo Bai</td>
                     </tr>
-                    <tr>
+                    <tr class="invited-talk-row" data-talk="chi">
                         <td>14:00 – 14:30</td>
-                        <td>Invited Talk</td>
+                        <td>Invited Talk: How RLVR Elicits Long-horizon Reasoning: A Learning Dynamics Perspective<span class="talk-hint">📖</span></td>
                         <td><a href="https://yuejiechi.github.io/" target="_blank">Prof. Yuejie Chi</a></td>
                     </tr>
-                    <tr>
+                    <tr class="invited-talk-row" data-talk="liang">
                         <td>14:30 – 15:00</td>
-                        <td>Invited Talk</td>
+                        <td>Invited Talk: Accelerating and Aligning Diffusion Models: Breaking Sampling Barriers and Optimizing Fine-Tuning<span class="talk-hint">📖</span></td>
                         <td><a href="https://sites.google.com/view/yingbinliang/home" target="_blank">Prof. Yingbin Liang</a></td>
                     </tr>
                     <tr class="event-break">
@@ -218,5 +218,16 @@ The workshop will bring together researchers from IT and AI to foster cross-disc
     </footer>
 
     <script src="src/js/main.js"></script>
+    
+        <!-- Talk Abstract Modal -->
+    <div id="talkModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTalkModal()">&times;</button>
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalSpeaker" class="modal-speaker"></p>
+            <hr class="modal-divider">
+            <p id="modalAbstract" class="modal-abstract"></p>
+        </div>
+    </div>
 </body>
 </html>
